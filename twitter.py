@@ -54,7 +54,7 @@ def auto():
         print(str(mention.id) + ' - ' + mention.full_text, flush=True)
         last_seen_id = mention.id
         store_last_seen_id(last_seen_id, FILE_NAME)
-        if '#covid19' or '#coronavirus' or '#covid' or '#covidupdates' in mention.full_text.lower():
+        if '#covid19' or '#coronavirus' or '#covid' or '#covidupdates' or '#covid_19' in mention.full_text.lower():
             print('found it', flush=True)
             print('responding back...', flush=True)
             tweet = covid_updates()
