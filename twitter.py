@@ -14,7 +14,6 @@ auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 
 api = tweepy.API(auth)
 
-
 FILE_NAME = 'last_seen_id.txt.txt'
 
 
@@ -65,7 +64,7 @@ def auto():
             tweet = covid_updates()
 
             api.update_status('@' + mention.user.screen_name +
-                              tweet + ' Wear a mask & Stay home and Stay Safe', mention.id)
+                              tweet + ' Wear a mask & Stay home, Stay Safe', mention.id)
             api.retweet(mention.id)
             api.create_favorite(mention.id)
 
