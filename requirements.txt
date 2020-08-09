@@ -19,7 +19,6 @@ geopy==2.0.0
 humanize==0.5.1
 idna==2.8
 langtable==0.0.51
-libcomps==0.1.15
 lxml==4.5.2
 Mako==1.1.1.dev0
 MarkupSafe==1.1.1
