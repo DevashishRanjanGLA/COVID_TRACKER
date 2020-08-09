@@ -58,7 +58,8 @@ def auto():
             print('found it', flush=True)
             print('responding back...', flush=True)
             tweet = covid_updates()
-            api.update_status('@' + mention.user.screen_name +
+            api.update_with_media('covid.png', mention.id)
+            api.update_status('covid.png'+'@' + mention.user.screen_name +
                               tweet + ' Wear a mask & Stay home and Stay Safe', mention.id)
             api.retweet(mention.id)
             api.create_favorite(mention.id)
