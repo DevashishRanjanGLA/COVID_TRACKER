@@ -1,14 +1,19 @@
+from os import environ
+
 import tweepy
 import time
 import requests
 from lxml import html
 
-auth = tweepy.OAuthHandler('zt5vtWXBmjWao6JwV2JlF57kM', 'lfz7u8OEkXcBsApGUHrv37kVe301o7dVcMx7CDudg6Wxjc3dpO')
-auth.set_access_token('1285604668991660032-0yQrUjmyt4G4aT17lKtiLf5RNrpMZm',
-                      'VHAPjpUjLYRBic6j1WaOkAImBwfy2dcxSNjZrWBn9QS0W')
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET']
+ACCESS_KEY = environ['ACCESS_KEY']
+ACCESS_SECRET = environ['ACCESS_SECRET']
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 
 api = tweepy.API(auth)
-user = api.me()
+
 
 FILE_NAME = 'last_seen_id.txt.txt'
 
@@ -58,6 +63,7 @@ def auto():
             print('found it', flush=True)
             print('responding back...', flush=True)
             tweet = covid_updates()
+
             api.update_status('@' + mention.user.screen_name +
                               tweet + ' Wear a mask & Stay home and Stay Safe', mention.id)
             api.retweet(mention.id)
