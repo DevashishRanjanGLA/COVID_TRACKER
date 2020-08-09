@@ -16,7 +16,6 @@ distro==1.4.0
 geographiclib==1.50
 geopandas==0.8.1
 geopy==2.0.0
-gpg==1.14.0
 humanize==0.5.1
 idna==2.8
 langtable==0.0.51
