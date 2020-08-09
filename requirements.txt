@@ -13,7 +13,6 @@ dasbus==0.2
 dbus-python==1.2.16
 decorator==4.4.0
 distro==1.4.0
-fros==1.1
 geographiclib==1.50
 geopandas==0.8.1
 geopy==2.0.0
