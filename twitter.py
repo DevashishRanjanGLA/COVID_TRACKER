@@ -72,4 +72,3 @@ def auto():
 while True:
     auto()
     time.sleep(10)
-    break
