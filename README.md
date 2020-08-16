@@ -16,6 +16,7 @@ So ,Let's talk about this **bot** now .
 **COVID_TRACKER** 
 
 This bot is pretty self explanatory as the title says this bot gives you the latest *covid* statistics when you mention it.
+This bot uses twitter's api **tweepy** , python web scraping libraires & the site that i am using for data scraping is **https://www.worldometers.info/coronavirus/**.
 
 
 
