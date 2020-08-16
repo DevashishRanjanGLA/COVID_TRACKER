@@ -2,11 +2,12 @@ import tweepy
 import time
 import requests
 from lxml import html
+import re
 
-CONSUMER_KEY = 'A'
-CONSUMER_SECRET = 'b'
-ACCESS_KEY = 'c'
-ACCESS_SECRET = 'd'
+CONSUMER_KEY = 'n'
+CONSUMER_SECRET = 'm'
+ACCESS_KEY = 'o'
+ACCESS_SECRET = 'p'
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
@@ -27,6 +28,37 @@ def store_last_seen_id(last_seen_id, file_name):
     f_write.write(str(last_seen_id))
     f_write.close()
     return
+
+
+def country_exist(argument):
+    response = requests.get(f'https://www.worldometers.info/coronavirus/')
+    doc = html.fromstring(response.content)
+    con_name = doc.xpath('//a[@class="mt_a"]/text()')
+    county = str(list(dict.fromkeys(con_name))).lower()
+    if argument in county:
+        return True
+
+
+def extract_country(string):
+    x = re.search(r"[@].*#", string)
+    text = x.group()
+    new = string.replace(text, '').strip().lower()
+    return new
+
+
+def country_wise_data(ctry):
+    if country_exist(ctry):
+        response = requests.get(f'https://www.worldometers.info/coronavirus/country/{ctry}')
+        doc = html.fromstring(response.content)
+        total, deaths, recovered = doc.xpath('//div[@class="maincounter-number"]/span/text()')
+        tweet = f'''  Latest Covid Updates:-
+                           Total Cases : {total}
+                              Deaths : {deaths}
+                          Recovered : {recovered} 
+                '''
+        return tweet
+    else:
+        print("Unable to find a unique country name!")
 
 
 def covid_updates():
@@ -55,16 +87,29 @@ def auto():
         last_seen_id = mention.id
         store_last_seen_id(last_seen_id, FILE_NAME)
         tweet = covid_updates()
-        if '#covid19' or '#coronavirus' or '#covid' or '#covidupdates' or '#covid_19' in mention.full_text.lower():
+        if '#covid19' in mention.full_text.lower():
             print('found it', flush=True)
             print('responding back...', flush=True)
             api.update_status('@' + mention.user.screen_name +
                               tweet + "You see that ! So, Please wear a mask and stay safe.", mention.id)
             api.retweet(mention.id)
             api.create_favorite(mention.id)
+        else:
+            arg = mention.full_text.lower()
+            print(arg)
+            c = extract_country(arg)
+            print(c)
+            if country_exist(c):
+                data = country_wise_data(c)
+                print('found it', flush=True)
+                print('responding back...', flush=True)
+                api.update_status('@' + mention.user.screen_name +
+                                  data + "You see that ! So, Please wear a mask and stay safe.", mention.id)
+                api.retweet(mention.id)
+                api.create_favorite(mention.id)
 
 
 while True:
     a_p_i = tweepy.API(auth)
     auto()
-    time.sleep(10)
+    time.sleep(15)
