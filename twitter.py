@@ -103,10 +103,12 @@ def auto():
                 data = country_wise_data(c)
                 print('found it', flush=True)
                 print('responding back...', flush=True)
+
                 api.update_status('@' + mention.user.screen_name +
                                   data + "You see that ! So, Please wear a mask and stay safe.", mention.id)
 
                 api.retweet(mention.id)
+
                 api.create_favorite(mention.id)
 
 
