@@ -107,6 +107,7 @@ def auto():
                 print('responding back...', flush=True)
                 api.update_status('@' + mention.user.screen_name +
                                   data + s, mention.id)
+
                 api.retweet(mention.id)
                 api.create_favorite(mention.id)
 
