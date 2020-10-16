@@ -92,7 +92,7 @@ def auto():
             print('found it', flush=True)
             print('responding back...', flush=True)
             api.update_status('@' + mention.user.screen_name +
-                              tweet + mention.id)
+                              tweet + 'Hi', mention.id)
             api.retweet(mention.id)
             api.create_favorite(mention.id)
         else:
