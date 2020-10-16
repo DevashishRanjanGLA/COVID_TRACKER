@@ -1,14 +1,15 @@
 import re
 import time
+from os import environ
 
 import requests
 import tweepy
 from lxml import html
 
-CONSUMER_KEY = 'ZpCvFn5OeojLLZVCOURayaIJY'
-CONSUMER_SECRET = 'VDfPkTfUZ74dGHEScdeYXJUdN2I2PVrAufLCUc0awWVggffiI6'
-ACCESS_KEY = '1285604668991660032-gVTXHHRlP2r4Kt6mVgyE6TtLbGtAbD'
-ACCESS_SECRET = 'xCIQTvv4ZSl1H2cdaxVK8KyUMV3P7xuEL0ouLWNuxstWp'
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET']
+ACCESS_KEY = environ['ACCESS_KEY']
+ACCESS_SECRET = environ['ACCESS_SECRET']
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
