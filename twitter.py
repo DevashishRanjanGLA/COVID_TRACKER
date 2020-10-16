@@ -1,3 +1,4 @@
+import random
 import re
 import time
 
@@ -15,6 +16,8 @@ auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
 FILE_NAME = 'last_seen_id.txt.txt'
+
+s = str(random.randint(0, 1000))
 
 
 def retrieve_last_seen_id(file_name):
@@ -103,7 +106,7 @@ def auto():
                 print('found it', flush=True)
                 print('responding back...', flush=True)
                 api.update_status('@' + mention.user.screen_name +
-                                  data + "", mention.id)
+                                  data + s, mention.id)
                 api.retweet(mention.id)
                 api.create_favorite(mention.id)
 
