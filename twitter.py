@@ -1,13 +1,14 @@
-import tweepy
-import time
-import requests
-from lxml import html
 import re
+import time
 
-CONSUMER_KEY = 'n'
-CONSUMER_SECRET = 'm'
-ACCESS_KEY = 'o'
-ACCESS_SECRET = 'p'
+import requests
+import tweepy
+from lxml import html
+
+CONSUMER_KEY = 'ZpCvFn5OeojLLZVCOURayaIJY'
+CONSUMER_SECRET = 'VDfPkTfUZ74dGHEScdeYXJUdN2I2PVrAufLCUc0awWVggffiI6'
+ACCESS_KEY = '1285604668991660032-gVTXHHRlP2r4Kt6mVgyE6TtLbGtAbD'
+ACCESS_SECRET = 'xCIQTvv4ZSl1H2cdaxVK8KyUMV3P7xuEL0ouLWNuxstWp'
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
@@ -96,9 +97,7 @@ def auto():
             api.create_favorite(mention.id)
         else:
             arg = mention.full_text.lower()
-            print(arg)
             c = extract_country(arg)
-            print(c)
             if country_exist(c):
                 data = country_wise_data(c)
                 print('found it', flush=True)
