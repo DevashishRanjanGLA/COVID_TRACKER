@@ -106,7 +106,7 @@ def auto():
                 print('found it')
                 print('responding back...')
                 api.update_status('@' + mention.user.screen_name +
-                                  data + s, mention.id)
+                                  data + f'Random Number:{s}', mention.id)
 
                 api.retweet(mention.id)
                 api.create_favorite(mention.id)
@@ -114,4 +114,4 @@ def auto():
 
 while True:
     auto()
-    time.sleep(100)
+    time.sleep(200)
