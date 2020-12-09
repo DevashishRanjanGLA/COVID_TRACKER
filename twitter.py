@@ -81,21 +81,21 @@ Active Cases :{active_cases}    Closed Cases :{closed_cases}
 
 
 def auto():
-    print('retrieving and replying to tweets...', flush=True)
+    print('retrieving and replying to tweets...')
     last_seen_id = retrieve_last_seen_id(FILE_NAME)
     mentions = api.mentions_timeline(
         last_seen_id,
         tweet_mode='extended')
     for mention in reversed(mentions):
-        print(str(mention.id) + ' - ' + mention.full_text, flush=True)
+        print(str(mention.id) + ' - ' + mention.full_text)
         last_seen_id = mention.id
         store_last_seen_id(last_seen_id, FILE_NAME)
         tweet = covid_updates()
-        if '#covid19' in mention.full_text.lower():
-            print('found it', flush=True)
-            print('responding back...', flush=True)
+        if '#covid_19' in mention.full_text.lower():
+            print('found it')
+            print('responding back...')
             api.update_status('@' + mention.user.screen_name +
-                              tweet + 'Hi', mention.id)
+                              tweet + f'Random Number:{s}', mention.id)
             api.retweet(mention.id)
             api.create_favorite(mention.id)
         else:
@@ -103,8 +103,8 @@ def auto():
             c = extract_country(arg)
             if country_exist(c):
                 data = country_wise_data(c)
-                print('found it', flush=True)
-                print('responding back...', flush=True)
+                print('found it')
+                print('responding back...')
                 api.update_status('@' + mention.user.screen_name +
                                   data + s, mention.id)
 
@@ -113,6 +113,5 @@ def auto():
 
 
 while True:
-    a_p_i = tweepy.API(auth)
     auto()
-    time.sleep(15)
+    time.sleep(100)
