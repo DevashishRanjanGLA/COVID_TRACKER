@@ -91,6 +91,7 @@ def auto():
         last_seen_id = mention.id
         store_last_seen_id(last_seen_id, FILE_NAME)
         tweet = covid_updates()
+
         if '#covid_19' in mention.full_text.lower():
             print('found it')
             print('responding back...')
@@ -98,6 +99,7 @@ def auto():
                               tweet + f'Random Number:{s}', mention.id)
             api.retweet(mention.id)
             api.create_favorite(mention.id)
+
         else:
             arg = mention.full_text.lower()
             c = extract_country(arg)
@@ -111,7 +113,10 @@ def auto():
                 api.retweet(mention.id)
                 api.create_favorite(mention.id)
 
+            if mention.id == last_seen_id:
+                time.sleep(500)
+
 
 while True:
     auto()
-    time.sleep(200)
+    time.sleep(50)
