@@ -113,8 +113,7 @@ def auto():
                 api.retweet(mention.id)
                 api.create_favorite(mention.id)
 
-            if mention.id == last_seen_id:
-                time.sleep(500)
+                time.sleep(100)
 
 
 while True:
