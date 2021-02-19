@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e8ef9e2-521a-4f3e-9d3d-6a878283af4b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/last_seen_id.txt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/last_seen_id.txt.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,14 +158,7 @@
       <workItem from="1607491446768" duration="4193000" />
       <workItem from="1608362629708" duration="4086000" />
       <workItem from="1610429538362" duration="54000" />
-      <workItem from="1613739916024" duration="1603000" />
-    </task>
-    <task id="LOCAL-00011" summary="random">
-      <created>1596999709163</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1596999709163</updated>
+      <workItem from="1613739916024" duration="2459000" />
     </task>
     <task id="LOCAL-00012" summary="random">
       <created>1596999796796</created>
@@ -504,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613741713302</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="made some minor changes">
+      <created>1613741988766</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1613741988766</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

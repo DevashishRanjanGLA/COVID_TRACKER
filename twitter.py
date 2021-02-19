@@ -118,4 +118,4 @@ def auto():
 
 while True:
     auto()
-    time.sleep(2000)
+    time.sleep(300)
