@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e8ef9e2-521a-4f3e-9d3d-6a878283af4b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/last_seen_id.txt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/last_seen_id.txt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,14 +159,7 @@
       <workItem from="1607491446768" duration="4193000" />
       <workItem from="1608362629708" duration="4086000" />
       <workItem from="1610429538362" duration="54000" />
-      <workItem from="1613739916024" duration="383000" />
-    </task>
-    <task id="LOCAL-00009" summary="just some message change">
-      <created>1596998635991</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1596998635991</updated>
+      <workItem from="1613739916024" duration="1295000" />
     </task>
     <task id="LOCAL-00010" summary="random">
       <created>1596999492111</created>
@@ -503,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613740050521</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="made some minor changes">
+      <created>1613740362015</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1613740362015</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

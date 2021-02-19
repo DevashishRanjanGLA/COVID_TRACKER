@@ -113,9 +113,9 @@ def auto():
                 api.retweet(mention.id)
                 api.create_favorite(mention.id)
 
-                time.sleep(100)
+                time.sleep(1000)
 
 
 while True:
     auto()
-    time.sleep(20)
+    time.sleep(200)
