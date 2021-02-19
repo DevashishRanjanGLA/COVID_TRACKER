@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e8ef9e2-521a-4f3e-9d3d-6a878283af4b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/last_seen_id.txt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/last_seen_id.txt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop/web scraping/country.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Complete-Python-3-Bootcamp" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Python.twitter">
@@ -157,14 +156,8 @@
       <workItem from="1602934184604" duration="1457000" />
       <workItem from="1607475187890" duration="4950000" />
       <workItem from="1607491446768" duration="4193000" />
-      <workItem from="1608362629708" duration="1998000" />
-    </task>
-    <task id="LOCAL-00007" summary="added a runtime file">
-      <created>1596997622316</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1596997622316</updated>
+      <workItem from="1608362629708" duration="4086000" />
+      <workItem from="1610429538362" duration="54000" />
     </task>
     <task id="LOCAL-00008" summary="added procfile">
       <created>1596998049733</created>
@@ -502,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608364247495</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="made some minor changes">
+      <created>1608364653758</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1608364653759</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -62,7 +62,7 @@ def country_wise_data(ctry):
                 '''
         return tweet
     else:
-        print("Unable to find a unique country name!")
+        covid_updates()
 
 
 def covid_updates():
