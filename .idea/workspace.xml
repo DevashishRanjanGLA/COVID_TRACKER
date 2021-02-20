@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6e8ef9e2-521a-4f3e-9d3d-6a878283af4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/last_seen_id.txt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/last_seen_id.txt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,13 +162,7 @@
       <workItem from="1610429538362" duration="54000" />
       <workItem from="1613739916024" duration="4358000" />
       <workItem from="1613752681150" duration="3430000" />
-    </task>
-    <task id="LOCAL-00016" summary="random">
-      <created>1597000078248</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1597000078248</updated>
+      <workItem from="1613789318158" duration="961000" />
     </task>
     <task id="LOCAL-00017" summary="random">
       <created>1597000153359</created>
@@ -504,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613745326090</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="made some minor changes">
+      <created>1613789379838</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1613789379839</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,6 +549,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/COVID_TRACKER$practice.coverage" NAME="practice Coverage Results" MODIFIED="1602857844141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Desktop/web scraping" />
     <SUITE FILE_PATH="coverage/COVID_TRACKER$country.coverage" NAME="country Coverage Results" MODIFIED="1607492574589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Desktop/web scraping" />
-    <SUITE FILE_PATH="coverage/COVID_TRACKER$twitter.coverage" NAME="twitter Coverage Results" MODIFIED="1613745297981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/COVID_TRACKER$twitter.coverage" NAME="twitter Coverage Results" MODIFIED="1613790309801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
